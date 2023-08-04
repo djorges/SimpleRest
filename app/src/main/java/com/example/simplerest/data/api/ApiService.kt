@@ -5,12 +5,12 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("/?inc=name")
+    @GET("?inc=name")
     suspend fun getUserName(): ApiResponse
 
-    @GET("/?inc=location")
+    @GET("?inc=location")
     suspend fun getUserLocation(): ApiResponse
 
-    @GET("/?inc=picture")
+    @GET("?inc=picture")
     suspend fun getUserPicture(): ApiResponse
 }
